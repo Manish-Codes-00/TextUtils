@@ -1,8 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, {useState} from 'react';
+import PropTypes from 'prop-types';
+
 export default function Navigation(props) {
   return (
-    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <nav className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
     <a className="navbar-brand" href="#">{props.title}</a>
     <button className="navbar-toggler btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +18,11 @@ export default function Navigation(props) {
           <a className="nav-link" href="#">{props.About}</a>
         </li>
       </ul>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2 bg-light btn-light" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-secondary" type="submit">Search</button>
-      </form>
+
+      <div className={`form-check form-switch mx-3 text-${props.mode==='light'?'dark':'light'}`}>
+  <input className="form-check-input" type="checkbox" onClick={props.toggleMode} id="flexSwitchCheckDefault"/>
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+</div>
     </div>
   </div>
 </nav>
