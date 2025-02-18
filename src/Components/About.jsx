@@ -12,7 +12,7 @@ export default function About(){
             setStyle({
                 color:'white',
                 backgroundColor:'#17283a',
-                border:'2px solid white',
+                border:'1px solid white',
             })
             setText("Enable Light Mode")
         }
@@ -20,7 +20,7 @@ export default function About(){
             setStyle({
                 color:'#17283a',
                 backgroundColor:'white',
-                border:'2px solid black'
+                // border:'2px solid black'
             })
             setText("Enable Dark Mode")
         }
