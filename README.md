@@ -1,8 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#This is Single Page Application for the utilities of text for converting text into UPPERCASE, lowercase, copy text and removing extra spaces from it.
+# It also tells how much time it will take to read all the text in the text box.
+# It counts number of words and characters in the text box.
+# It shows preview of the text in the preview section as changes occurs in the text box. 
