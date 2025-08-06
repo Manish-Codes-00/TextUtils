@@ -43,17 +43,17 @@ return(
     <h1>{props.heading}</h1>
   <textarea className="form-control" value={text} style={{backgroundColor:props.mode==='dark'?'#17283a':'white', color:props.mode==='light'?'black':'white'}} onChange={handleOnChange} id="myBox" rows="8"></textarea>
 </div>
-<button className="btn btn-primary mx-2 btn-secondary"  onClick={handleUpClick}>Convert To UpperCase</button>
-<button className="btn btn-primary mx-2 btn-secondary"  onClick={handleDownClick}>Convert To LowerCase</button>
-<button className="btn btn-primary mx-2 btn-secondary"  onClick={handleClearClick}>Clear Text</button>
-<button className="btn btn-primary mx-2 btn-secondary"  onClick={handleCopyClick}>Copy Text</button>
-<button className="btn btn-primary mx-2 btn-secondary"  onClick={handleExtraSpace}>Remove Extra Spaces</button>
+<button className="btn btn-primary mx-1 my-1 btn-secondary"  onClick={handleUpClick}>Convert To UpperCase</button>
+<button className="btn btn-primary mx-1 my-1 btn-secondary"  onClick={handleDownClick}>Convert To LowerCase</button>
+<button className="btn btn-primary mx-1 my-1 btn-secondary"  onClick={handleClearClick}>Clear Text</button>
+<button className="btn btn-primary mx-1 my-1 btn-secondary"  onClick={handleCopyClick}>Copy Text</button>
+<button className="btn btn-primary mx-1 my-1 btn-secondary"  onClick={handleExtraSpace}>Remove Extra Spaces</button>
 </div>
     <div className={`container my-2 text-${props.mode==='light'?'dark':'light'}`}>
     <h1>your text summary
     </h1>
     <p>
-    {text.split(" ").length} words and characters  {text.length}
+    {text.split(" ").filter((element)=>{return element.length!==0}).length} words and characters  {text.length}
     </p>
     <p>time to read the text: {0.008* text.split(" ").length} minutes.</p>
     <h3>Preview</h3>

@@ -5,14 +5,14 @@ export default function Navigation(props) {
   return (
     <nav className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode}`}>
   <div className="container-fluid">
-    <Link className="navbar-brand" to="#">{props.title}</Link>
+    <h1 className="navbar-brand" >{props.title}</h1>
     <button className="navbar-toggler btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/Home">Home</Link>
+          <Link className="nav-link active" aria-current="page" to="./">Home</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/About">{props.About}</Link>
@@ -29,11 +29,11 @@ export default function Navigation(props) {
   )
 }
 
-Navigation.propTypes={
-    title: PropTypes.string.isRequired,
-    About: PropTypes.string.isRequired
-}
-Navigation.defaultProps={
-    title:"Set title here",
-    About:"About us here"
-}
+// Navigation.propTypes={
+//     title: PropTypes.string.isRequired,
+//     About: PropTypes.string.isRequired
+// }
+// Navigation.defaultProps={
+//     title:"Set title here",
+//     About:"About us here"
+// }

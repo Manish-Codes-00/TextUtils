@@ -44,14 +44,12 @@ function App() {
       <Alert alert={alert} />
       <div className="container">
       <Routes>
-            <Route exact path="/About" element={<About />}>
-            </Route>
-            <Route exact path="/Home" element={<TextForm heading="Enter text to analyze"  mode={mode} showAlert={showAlert} />}>
-            </Route>
-          </Routes>
+            <Route exact path="/" element={<TextForm heading="Enter text to analyze"  mode={mode} showAlert={showAlert} />} />
+            <Route exact path="/About" element={<About />} />
+      </Routes>
       </div>
       </Router>
     </>
-  );
+  )
 }
 export default App;
