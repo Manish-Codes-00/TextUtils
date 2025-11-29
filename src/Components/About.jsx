@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
 
-export default function About(){
+export default function About(props){
     return (
-        <div className='container my-3'>
+        <div className={`container my-3 text-${props.mode==='light'?'dark':'light'}`}>
+{/* className={`container text-${props.mode==='light'?'dark':'light'}`} */}
             <h1 className='my-3'>About us</h1>
     <div className="accordion" id="accordionExample" >
   <div className="accordion-item">
