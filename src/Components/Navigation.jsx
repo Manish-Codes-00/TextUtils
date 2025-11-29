@@ -1,5 +1,3 @@
-import React, {useState} from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 export default function Navigation(props) {
   return (
@@ -29,11 +27,3 @@ export default function Navigation(props) {
   )
 }
 
-// Navigation.propTypes={
-//     title: PropTypes.string.isRequired,
-//     About: PropTypes.string.isRequired
-// }
-// Navigation.defaultProps={
-//     title:"Set title here",
-//     About:"About us here"
-// }
